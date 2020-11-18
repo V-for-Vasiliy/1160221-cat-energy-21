@@ -35,7 +35,7 @@
           программу питания для вашего кота</p>
         <form class="program-formation__form form" method="get" action="https://echo.htmlacademy.ru/">
           <fieldset class="form__animal-information animal-information">
-            <h2 class="visually-hidden">Информация о животном и его кондициях</h2> <!-- Скрытый заголовок -->
+            <legend><h2 class="visually-hidden">Информация о животном и его кондициях</h2></legend> <!-- Скрытый заголовок -->
             <fieldset class="animal-information__cat-bio cat-bio">
               <ul class="cat-bio__field-list">
                 <li class="cat-bio__field-item">
@@ -70,7 +70,7 @@
             </fieldset>
           </fieldset>
           <fieldset class="form__client-contacts client-contacts">
-            <h2 class="client-contacts__title section-title">Контактные данные (владельца кота)</h2>
+            <legend><h2 class="client-contacts__title section-title">Контактные данные (владельца кота)</h2></legend>
             <ul class="client-contacts__field-list">
               <li class="client-contacts__field-item">
                 <label class="client-contacts__label" for="email-field">E-mail:*</label>
@@ -82,12 +82,12 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="form__comment comment">
+          <div class="form__comment comment">
             <h2 class="comment__title section-title">Комментарий</h2>
             <textarea class="comment__input" name="comment" id="comment-field" cols="62" rows="6" placeholder="Расскажите обо всех повадках кота" aria-label="Комментарий"></textarea>
-          </fieldset>
+          </div>
           <fieldset class="form__optional optional">
-            <h2 class="optional__title section-title">Дополнительно</h2>
+            <legeng><h2 class="optional__title section-title">Дополнительно</h2></legeng>
             <ul class="optional__checkbox-list">
               <li class="optional__checkbox-item">
                 <input class="optional__input" type="checkbox" id="optional-sweetener" name="optional-checkbox" value="Сахарозаменитель" checked="checked">
