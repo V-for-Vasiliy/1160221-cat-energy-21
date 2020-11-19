@@ -35,41 +35,38 @@
           программу питания для вашего кота</p>
         <form class="program-formation__form form" method="get" action="https://echo.htmlacademy.ru/">
           <fieldset class="form__fieldset">
-            <legend><h2 class="visually-hidden">Информация о животном и его кондициях</h2></legend> <!-- Скрытый заголовок -->
-            <fieldset class="form__fieldset">
-              <legend class="visually-hidden">Информация о животном</legend>
-              <ul class="form__field-list">
-                <li class="form__field-item field-item">
-                  <label class="field-item__label" for="name-field">Имя:*</label>
-                  <input class="field-item__input field-item__input--text" type="text" required id="name-field" name="name" placeholder="Барсик">
-                </li>
-                <li class="form__field-item field-item">
-                  <label class="field-item__label" for="weight-field">Вес:*</label>
-                  <input class="field-item__input field-item__input--number" type="number" required id="weight-field" name="weight" placeholder="7">
-                </li>
-                <li class="form__field-item field-item">
-                  <label class="field-item__label" for="age-field">Возраст:*</label>
-                  <input class="field-item__input field-item__input--number" type="number" required id="age-field" name="age" placeholder="7">
-                </li>
-              </ul>
-            </fieldset>
-            <fieldset class="form__fieldset">
-              <legend class="visually-hidden">Кондиции животного</legend>
-              <ul class="form__field-list">
-                <li class="form__field-item field-item">
-                  <input class="field-item__input field-item__input--radio" type="radio" name="slimming" id="condition-slimming" value="Похудение" checked="checked">
-                  <label class="field-item__label" for="condition-slimming">Похудение</label>
-                </li>
-                <li class="form__field-item field-item">
-                  <input class="field-item__input field-item__input--radio" type="radio" name="weight-gain" id="condition-weight-gain" value="Набор массы">
-                  <label class="field-item__label" for="condition-weight-gain">Набор массы</label>
-                </li>
-                <li class="form__field-item field-item">
-                  <input class="form__input form__input--radio" type="radio" name="consultation" id="condition-consultation" value="Требуется консультация">
-                  <label class="form__label" for="condition-consultation">Не знаю (Нужен ваш совет)</label>
-                </li>
-              </ul>
-            </fieldset>
+            <legend class="visually-hidden">Информация о животном</legend>
+            <ul class="form__field-list">
+              <li class="form__field-item field-item">
+                <label class="field-item__label" for="name-field">Имя:*</label>
+                <input class="field-item__input field-item__input--text" type="text" required id="name-field" name="name" placeholder="Барсик">
+              </li>
+              <li class="form__field-item field-item">
+                <label class="field-item__label" for="weight-field">Вес:*</label>
+                <input class="field-item__input field-item__input--number" type="number" required id="weight-field" name="weight" placeholder="7">
+              </li>
+              <li class="form__field-item field-item">
+                <label class="field-item__label" for="age-field">Возраст:*</label>
+                <input class="field-item__input field-item__input--number" type="number" required id="age-field" name="age" placeholder="7">
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="form__fieldset">
+            <legend class="visually-hidden">Кондиции животного</legend>
+            <ul class="form__field-list">
+              <li class="form__field-item field-item">
+                <input class="field-item__input field-item__input--radio" type="radio" name="slimming" id="condition-slimming" value="Похудение" checked="checked">
+                <label class="field-item__label" for="condition-slimming">Похудение</label>
+              </li>
+              <li class="form__field-item field-item">
+                <input class="field-item__input field-item__input--radio" type="radio" name="weight-gain" id="condition-weight-gain" value="Набор массы">
+                <label class="field-item__label" for="condition-weight-gain">Набор массы</label>
+              </li>
+              <li class="form__field-item field-item">
+                <input class="form__input form__input--radio" type="radio" name="consultation" id="condition-consultation" value="Требуется консультация">
+                <label class="form__label" for="condition-consultation">Не знаю (Нужен ваш совет)</label>
+              </li>
+            </ul>
           </fieldset>
           <fieldset class="form__fieldset">
             <legend><h2 class="form__title section-title">Контактные данные (владельца кота)</h2></legend>
