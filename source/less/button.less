@@ -1,1 +1,29 @@
-/* Стили для кнопок */
+.button {
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+  border: none;
+  box-shadow: none;
+
+  background-color: @basic_green;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 26px;
+  padding-right: 26px;
+
+  font-family: Oswald;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 100%;
+  text-transform: uppercase;
+  text-align: center;
+  color: @main-bg;
+
+  &:hover {
+    background-color: @basic_green-2;
+  }
+
+  &:active {
+    color: fadeout(@main-bg, 70%);
+  }
+}
