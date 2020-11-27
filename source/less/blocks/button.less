@@ -1,0 +1,29 @@
+.button {
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+  border: none;
+  box-shadow: none;
+
+  background-color: @color-green-400;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 26px;
+  padding-right: 26px;
+
+  font-family: @decor-font;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 100%;
+  text-transform: uppercase;
+  text-align: center;
+  color: @color-white;
+
+  &:hover {
+    background-color: @color-green-500;
+  }
+
+  &:active {
+    color: fadeout(@color-white, 70%);
+  }
+}
