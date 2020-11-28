@@ -68,7 +68,7 @@
               </li>
               <li class="form__field-item field-item">
                 <input class="form__input finput-radio" type="radio" name="consultation" id="condition-consultation" value="Требуется консультация">
-                <label class="form__label" for="condition-consultation">Не знаю (Нужен ваш совет)</label>
+                <label class="field-item__label" for="condition-consultation">Не знаю (Нужен ваш совет)</label>
               </li>
             </ul>
           </fieldset>
@@ -87,7 +87,7 @@
           </fieldset>
           <div class="form__fieldset"> <!-- такой же как fieldset -->
             <label class="form__title section-title" for="comment-field">Комментарий</label>
-            <textarea class="field-item__input input-textarea" name="comment" id="comment-field" cols="62" rows="6" placeholder="Расскажите обо всех повадках кота" aria-label="Комментарий"></textarea>
+            <textarea class="field-item__input input-textarea" name="comment" id="comment-field" cols="40" rows="6" placeholder="Расскажите обо всех повадках кота" aria-label="Комментарий"></textarea>
           </div>
           <fieldset class="form__fieldset">
             <legend class="form__title section-title">Дополнительно</legend>
@@ -106,11 +106,12 @@
               </li>
               <li class="form__field-item field-item">
                 <input class="field-item__input input-checkbox" type="checkbox" id="optional-vitamins" name="optional-checkbox" value="Витамины">
-                <label class="field-item__label" for="optional-milk">Витамины</label>
+                <label class="field-item__label" for="optional-vitamins">Витамины</label>
               </li>
             </ul>
           </fieldset>
           <button class="form__button input-submit button" type="submit" aria-label="Отправить заявку">Отправить заявку</button>
+          <p class="form__text">* — Обязательные поля</p>
         </form>
       </section>
     </main>
