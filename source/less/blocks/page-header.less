@@ -1,20 +1,35 @@
 .page-header {
-  display: flex;
-  flex-direction: column;
   background-color: @color-white;
 
   @media (min-width: @tablet-width) {
-    flex-direction: row;
-    min-height: 76px;
+
   }
 
   @media (min-width: @desktop-width) {
-    min-height: 107px;
+    background: linear-gradient(90deg, @color-white 0%, @color-white 50%, @color-green-500 50%, @color-green-500 100%)
   }
 }
 
 .page-header__logo {
   @media (min-width: @tablet-width) {
     margin-right: auto;
+  }
+}
+
+.page-header__wrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: 280px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    max-width: 708px;
+    flex-direction: row;
+    min-height: 76px;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 1220px;
+    min-height: 107px;
   }
 }
