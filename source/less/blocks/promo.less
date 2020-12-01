@@ -1,22 +1,38 @@
 .promo {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  align-items: center;
   background-image: url("../img/index/index_promo-background.jpg");
+  background-size: cover;
   background-repeat: no-repeat;
-
   padding-top: 24px;
 
   @media (min-width: @tablet-width) {
     background-image: none;
-    align-items: flex-start;
   }
 
   @media (min-width: @desktop-width) {
     min-height: 553px;
-    background-image: url("../img/index/index_promo-background.jpg");
-    background-position: right;
+    background: linear-gradient(90deg, @color-white 0%, @color-white 50%, @color-green-500 50%, @color-green-500 100%);
+  }
+}
+
+.promo__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  max-width: 280px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    max-width: 708px;
+    align-items: flex-start;
+    flex-direction: row;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    max-width: 1220px;
   }
 }
 
@@ -58,22 +74,35 @@
 }
 
 .promo__button {
+  z-index: 1;
+
   @media (min-width: @tablet-width) {
     margin-bottom: auto;
+    width: 244px;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-column: 1;
   }
 }
 
 .promo__image {
+  position: relative;
+
   @media (min-width: @tablet-width){
+    top: -50px;
+    z-index: 0;
     width: 100%;
     height: 100%;
     order: 4;
   }
 
   @media (min-width: @desktop-width) {
-    position: absolute;
-    z-index: 0;
-    right: 330px;
+    top: 0;
+    left: -160px;
+    grid-column: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
     width: 552px;
     height: 499px;
   }
