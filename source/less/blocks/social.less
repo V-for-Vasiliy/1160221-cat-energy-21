@@ -1,11 +1,14 @@
 .social {
   display: flex;
-  flex-basis: 130px;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   list-style: none;
   padding: 0;
   margin: 0 auto;
+}
+
+.social__item:not(:last-child) {
+  padding-right: 24px;
 }
 
 .social__button:hover .social__icon {
