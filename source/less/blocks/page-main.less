@@ -1,3 +1,16 @@
+.page-main__wrapper {
+  max-width: 280px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    max-width: 708px;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 1220px;
+  }
+}
+
 .page-main__title,
 .page-main__subtitle {
   font-family: @decor-font;
