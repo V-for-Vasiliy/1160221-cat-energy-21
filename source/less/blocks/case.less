@@ -2,6 +2,35 @@
   background-color: @color-grey-81;
 }
 
+.case__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 280px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    max-width: 708px;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 1220px;
+  }
+}
+
+.case__statistic-container,
+.case__effect-visualizer {
+  width: 100%;
+
+  @media (min-width: @desktop-width) {
+    width: 50%;
+  }
+}
+
+.case__statistic-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .case__text {
   font-family: @regular-font;
   font-weight: 400;
@@ -11,12 +40,24 @@
 }
 
 .case__statistic {
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-between;
   list-style: none;
   padding: 0;
   margin: 0;
+
+  @media (min-width: @tablet-width) {
+    flex-grow: 0.5;
+  }
+
+  @media (min-width: @tablet-width) {
+    flex-grow: 1;
+  }
 }
 
 .case__money-spent {
+  flex-grow: 1;
   font-family: @decor-font;
   font-weight: 400;
   font-size: 14px;
@@ -24,4 +65,14 @@
   text-align: center;
   text-transform: uppercase;
   color: @color-black;
+
+  @media (min-width: @tablet-width) {
+    flex-grow: 0.5;
+    text-align: right;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 100%;
+    text-align: center;
+  }
 }

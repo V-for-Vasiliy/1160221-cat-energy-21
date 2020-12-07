@@ -1,7 +1,32 @@
+.special__wrapper { /* А wrapper может быть отдельным БЭМ блоком? */
+  max-width: 280px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    max-width: 708px;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 1220px;
+  }
+}
+
 .special__list {
+  display: grid;
+  gap: 20px;
   list-style: none;
   margin: 0;
   padding: 0;
+
+  @media (min-width: @tablet-width) {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 80px;
+    row-gap: 37px;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 }
 
 .special__description {
@@ -10,4 +35,8 @@
   font-size: 14px;
   line-height: 129%;
   color: @color-grey-700;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+  }
 }
