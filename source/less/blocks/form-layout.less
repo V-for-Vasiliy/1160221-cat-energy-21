@@ -1,0 +1,27 @@
+.form-layout {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.form-layout__columns {
+  @media (min-width: @desktop-width) {
+    flex-direction: row;
+  }
+}
+
+.form-layout__column-item {
+  @media (min-width: @desktop-width) {
+    flex-grow: 1;
+  }
+}
+
+.form-layout__column-item--border {
+    border: 1px red solid;
+}
+
+.form-layout__column-item:not(:last-child) {
+  @media (min-width: @desktop-width) {
+    margin-right: 80px;
+  }
+}

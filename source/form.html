@@ -42,8 +42,8 @@
       <section class="page-main__program-formation program-formation">
         <h2 class="visually-hidden">Анкета</h2> <!-- Скрытый заголовок -->
         <form class="program-formation__form form" method="get" action="https://echo.htmlacademy.ru/">
-          <div class="form__wrapper">
-            <fieldset class="form__fieldset">
+          <div class="form__wrapper form-layout form-layout__columns">
+            <fieldset class="form__fieldset form-layout__column-item">
               <legend class="visually-hidden">Информация о животном</legend>
               <ul class="form__field-list">
                 <li class="form__field-item field-item">
@@ -60,9 +60,7 @@
                 </li>
               </ul>
             </fieldset>
-          </div>
-          <fieldset class="form__fieldset">
-            <div class="form__wrapper">
+            <fieldset class="form__fieldset form-layout__column-item form-layout__column-item--border">
               <legend class="visually-hidden">Кондиции животного</legend>
               <ul class="form__field-list">
                 <li class="form__field-item field-item">
@@ -78,8 +76,8 @@
                   <label class="field-item__label" for="condition-consultation">Не знаю (Нужен ваш совет)</label>
                 </li>
               </ul>
-            </div>
-          </fieldset>
+            </fieldset>
+          </div>
           <fieldset class="form__fieldset">
             <div class="form__wrapper">
               <legend class="form__title section-title">Контактные данные (владельца кота)</legend>
