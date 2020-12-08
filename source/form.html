@@ -104,20 +104,20 @@
           <fieldset class="form__fieldset">
             <div class="form__wrapper">
               <legend class="form__title">Дополнительно</legend>
-              <ul class="form__field-list">
-                <li class="form__field-item field-item">
+              <ul class="form__field-list form-layout form-layout__columns form-layout__columns--smooth">
+                <li class="form__field-item field-item form-layout__column-item form-layout__column-item--smooth">
                   <input class="field-item__input input-checkbox" type="checkbox" id="optional-sweetener" name="optional-checkbox" value="Сахарозаменитель" checked="checked">
                   <label class="field-item__label" for="optional-sweetener">Сахарозаменитель</label>
                 </li>
-                <li class="form__field-item field-item">
+                <li class="form__field-item field-item form-layout__column-item form-layout__column-item--smooth">
                   <input class="field-item__input input-checkbox" type="checkbox" id="optional-drinking-water" name="optional-checkbox" value="Питьевая вода">
                   <label class="field-item__label" for="optional-drinking-water">Питьевая вода</label>
                 </li>
-                <li class="form__field-item field-item">
+                <li class="form__field-item field-item form-layout__column-item form-layout__column-item--smooth">
                   <input class="field-item__input input-checkbox" type="checkbox" id="optional-milk" name="optional-checkbox" value="Молоко">
                   <label class="field-item__label" for="optional-milk">Молоко</label>
                 </li>
-                <li class="form__field-item field-item">
+                <li class="form__field-item field-item form-layout__column-item form-layout__column-item--smooth">
                   <input class="field-item__input input-checkbox" type="checkbox" id="optional-vitamins" name="optional-checkbox" value="Витамины">
                   <label class="field-item__label" for="optional-vitamins">Витамины</label>
                 </li>
@@ -125,14 +125,16 @@
             </div>
           </fieldset>
           <div class="form__wrapper">
-            <button class="form__button input-submit button" type="submit" aria-label="Отправить заявку">Отправить заявку</button>
-            <p class="form__text">* — Обязательные поля</p>
+            <div class="form-layout form-layout__columns">
+              <button class="form-layout__column-item form__button input-submit button" type="submit" aria-label="Отправить заявку">Отправить заявку</button>
+              <p class="form-layout__column-item form__text">* — Обязательные поля</p>
+            </div>
           </div>
         </form>
       </section>
     </main>
     <footer class="page-footer">
-      <div class="page-footer__contacts contacts">
+      <div class="page-footer__contacts page-footer__contacts--background contacts">
         <div class="contacts__wrapper">
           <div class="contacts__address-card">
             <b class="contacts__appeal">Приглашаем к сотрудничеству дилеров!</b>
