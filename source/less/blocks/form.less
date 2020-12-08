@@ -1,9 +1,23 @@
+.form__title {
+  font-family: @decor-font;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 108%;
+  color: @color-black;
+  margin-bottom: 35px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 36px;
+    line-height: 100%;
+    margin-bottom: 76px;
+    margin-top: 65px;
+  }
+}
+
 .form__fieldset {
   padding: 0;
   margin: 0;
   border: none;
-
-  padding-bottom: 25px;
 }
 
 .form__wrapper {
@@ -19,10 +33,26 @@
   }
 }
 
+.form__container {
+  display: flex;
+  flex-direction: column;
+}
+
 .form__field-list {
   list-style: none;
   padding: 0;
   margin: 0;
+}
+
+.form__field-list--border {
+  @media (min-width: @tablet-width) {
+    border: 1px @color-grey-90 solid;
+    padding: 25px;
+  }
+}
+
+.form__field-item {
+  margin-bottom: 20px; /* Пока не получилось переопределить одновременно для последнего и всех элементов распределяющихся на 2 колонки в десктпной версии */
 }
 
 /* Chrome, Safari, Edge, Opera */
