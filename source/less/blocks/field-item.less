@@ -1,3 +1,7 @@
+.field-item {
+  display: flex;
+}
+
 .field-item__label {
   font-family: @decor-font;
   font-weight: normal;
@@ -5,4 +9,10 @@
   line-height: 112%;
   text-transform: uppercase;
   color: @color-grey-700;
+  margin-right: 10px;
+  align-self: center;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+  }
 }
