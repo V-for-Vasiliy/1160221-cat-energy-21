@@ -1,0 +1,18 @@
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: @color-grey-50;
+}
+
+.card__image-container {
+  display: flex;
+}
+
+.card__image-container,
+.card__text-container {
+  width: 50%;
+
+  @media (min-width: @tablet-width) {
+    width: 100%;
+  }
+}
