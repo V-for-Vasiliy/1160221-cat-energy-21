@@ -1,4 +1,4 @@
-.additiomal-product__wrapper {
+.additional-product__wrapper {
   max-width: 280px;
   margin: 0 auto;
   display: flex;
@@ -16,18 +16,72 @@
   }
 }
 
+.additional-product {
+  margin-bottom: 35px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 76px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 86px;
+  }
+}
+
 .additional-product__list {
   list-style: none;
   margin: 0;
+  margin-bottom: 39px;
   padding: 0;
 
+  @media (min-width: @tablet-width) {
+    margin-bottom: 69px;
+  }
+
   @media (min-width: @desktop-width) {
-    width: 60%;
+    width: 895px;
+    margin-bottom: 0;
   }
 }
 
 .additional-product__item {
-  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 13px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid @color-grey-200;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 26px;
+    padding-bottom: 38px;
+    padding-left: 28px;
+    padding-right: 28px;
+    border: 1px solid @color-grey-200;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 15px;
+    padding-bottom: 17px;
+    border-left: none;
+    border-right: none;
+  }
+}
+
+.additional-product__item:not(:last-child) {
+  @media (min-width: @tablet-width) {
+    margin-bottom: -1px;
+  }
+}
+
+.additional-product_promo {
+  @media (min-width: @desktop-width) {
+    width: 245px;
+  }
 }
 
 .additional-product__title {
@@ -39,4 +93,33 @@
   text-transform: uppercase;
 
   color: @color-grey-850;
+
+  @media (min-width: @tablet-width) {
+    width: 50%;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 30%;
+  }
+}
+
+.additional-product__description {
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: @tablet-width) {
+    width: 50%;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 30%;
+  }
+}
+
+.additinal__button {
+  width: 100%;
+
+  @media (min-width: @desktop-width) {
+    width: 30%;
+  }
 }
