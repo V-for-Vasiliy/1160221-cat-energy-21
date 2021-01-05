@@ -13,8 +13,6 @@
 .additional-product__wrapper {
   max-width: 280px;
   margin: 0 auto;
-  display: flex;
-  flex-direction: column;
 
   @media (min-width: @tablet-width) {
     max-width: 708px;
@@ -22,7 +20,7 @@
 
   @media (min-width: @desktop-width) {
     max-width: 1220px;
-    flex-direction: row;
+    display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
   }
@@ -45,16 +43,15 @@
 }
 
 .additional-product__item {
-  display: flex;
-  flex-direction: column;
   padding-top: 13px;
   padding-bottom: 18px;
   border-bottom: 1px solid @color-grey-200;
 
   @media (min-width: @tablet-width) {
-    flex-direction: row;
+    display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
     padding-top: 26px;
     padding-bottom: 38px;
     padding-left: 28px;
