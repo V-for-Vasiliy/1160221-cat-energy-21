@@ -1,0 +1,33 @@
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: @color-grey-50;
+}
+
+.card__image-container {
+  display: flex;
+}
+
+.card__image-container,
+.card__details {
+  width: 50%;
+
+  @media (min-width: @tablet-width) {
+    width: 100%;
+  }
+}
+
+.card__title {
+  font-family: @decor-font;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 125%;
+
+  text-transform: uppercase;
+
+  color: @color-grey-850;
+}
+
+.card__button {
+  width: 100%;
+}

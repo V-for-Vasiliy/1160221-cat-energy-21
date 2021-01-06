@@ -1,22 +1,36 @@
 .product-promo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
   background-image: url("../img/catalog/product-promo-1.jpg");
+  background-size: cover;
   background-repeat: no-repeat;
   background-color: @color-green-400;
 
   padding-top: 50px;
   padding-bottom: 50px;
-  margin-bottom: 35px;
 }
 
 .product-promo__description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   font-family: @regular-font;
   font-weight: 400;
   font-size: 16px;
   line-height: 100%;
-
   text-align: center;
-
   color: @color-white;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  @media (min-width: @desktop-width) {
+    flex-direction: column;
+  }
 }
 
 .product-promo__description::before {
@@ -26,4 +40,12 @@
   height: 80px;
   margin-bottom: 48px;
   background-image: url("../img/catalog/icon_gift.svg");
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 48px;
+  }
 }
