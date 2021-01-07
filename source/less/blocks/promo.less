@@ -2,7 +2,9 @@
   background-image: url("../img/index/index_promo-background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  padding-top: 24px;
+  padding-top: 27px;
+  padding-bottom: 125px;
+  margin-bottom: 200px;
 
   @media (min-width: @tablet-width) {
     background-image: none;
@@ -57,6 +59,7 @@
 .promo__main-title {
   font-size: 36px;
   margin: 0;
+  margin-bottom: 26px;
 
   @media (min-width: @tablet-width) {
     font-size: 60px;
@@ -66,10 +69,18 @@
 .promo__subtitle {
   font-size: 14px;
   text-transform: uppercase;
+  padding: 0;
+  margin: 0;
 }
 
 .promo__button {
+  font-size: 14px;
   z-index: 1;
+  position: relative;
+  top: 303px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  width: 100%;
 
   @media (min-width: @tablet-width) {
     margin-bottom: auto;
@@ -82,9 +93,11 @@
 }
 
 .promo__image {
-  position: relative;
+  position: absolute;
+  top: 430px;
 
   @media (min-width: @tablet-width) {
+    position: relative;
     top: -50px;
     z-index: 0;
     width: 100%;
