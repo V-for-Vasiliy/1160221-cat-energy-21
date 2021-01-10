@@ -52,6 +52,7 @@
 
   @media (min-width: @tablet-width) {
     padding: 0;
+    padding-bottom: 10px;
     border: none;
   }
 }
@@ -71,7 +72,8 @@
 }
 
 .main-nav__item--active {
-  cursor: pointer;
+  cursor: default;
+  border-bottom: 2px solid @color-green-400;
 }
 
 .main-nav__link {
@@ -83,6 +85,15 @@
   letter-spacing: 0.7px;
   color: @color-black;
 
+  @media (min-width: @tablet-width) {
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 24px;
+  }
+}
+
+.main-nav__link:not(.main-nav__link--active) {
   &:hover {
     opacity: 0.6;
   }
