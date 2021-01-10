@@ -42,6 +42,7 @@
 .special__item {
   display: flex;
   align-items: center;
+  position: relative;
 }
 
 .special__item::before {
@@ -65,4 +66,46 @@
   @media (min-width: @tablet-width) {
     font-size: 16px;
   }
+}
+
+.special__description--compound::before,
+.special__description--cooking::before,
+.special__description--diet::before,
+.special__description--result::before {
+  content: '';
+  display: block;
+  background-repeat: no-repeat;
+  position: absolute;
+}
+
+.special__description--compound::before {
+  width: 32px;
+  height: 33px;
+  background-image: url("../img/index/icon_leaf.svg");
+  left: 14px;
+  top: 13px;
+}
+
+.special__description--cooking::before {
+  width: 32px;
+  height: 33px;
+  background-image: url("../img/index/icon_tub.svg");
+  left: 14px;
+  top: 13px;
+}
+
+.special__description--diet::before {
+  width: 32px;
+  height: 33px;
+  background-image: url("../img/index/icon_eat.svg");
+  left: 17px;
+  top: 15px;
+}
+
+.special__description--result::before {
+  width: 32px;
+  height: 33px;
+  background-image: url("../img/index/icon_alarm.svg");
+  left: 13px;
+  top: 13px;
 }
