@@ -73,7 +73,10 @@
 
 .main-nav__item--active {
   cursor: default;
-  border-bottom: 2px solid @color-green-400;
+
+  @media (min-width: @tablet-width) {
+    border-bottom: 2px solid @color-green-400;
+  }
 }
 
 .main-nav__link {
