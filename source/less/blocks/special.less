@@ -1,5 +1,11 @@
 .special {
   margin-bottom: 42px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 0;
+    padding-bottom: 100px;
+    border-bottom: 1px solid @color-grey-91;
+  }
 }
 
 .special__wrapper {
@@ -17,7 +23,8 @@
 
 .special__title {
   font-size: 36px;
-  line-height: 40px;
+  line-height: 140%;
+  margin-bottom: 59px;
 }
 
 .special__list {
@@ -30,8 +37,9 @@
 
   @media (min-width: @tablet-width) {
     grid-template-columns: 1fr 1fr;
-    column-gap: 80px;
-    row-gap: 37px;
+    column-gap: 61px;
+    row-gap: 132px;
+    margin-top: 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -43,6 +51,11 @@
   display: flex;
   align-items: center;
   position: relative;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 
 .special__item::before {
@@ -53,6 +66,13 @@
   background-color: @color-green-400;
   flex-shrink: 0;
   margin-right: 20px;
+
+  @media (min-width: @tablet-width) {
+    margin-right: 0;
+    margin-bottom: 34px;
+    width: 80px;
+    height: 80px;
+  }
 }
 
 .special__description {
@@ -65,6 +85,8 @@
 
   @media (min-width: @tablet-width) {
     font-size: 16px;
+    line-height: 150%;
+    width: 80%;
   }
 }
 
@@ -84,6 +106,11 @@
   background-image: url("../img/index/icon_leaf.svg");
   left: 14px;
   top: 13px;
+
+  @media (min-width: @tablet-width) {
+    left: 25px;
+    top: 25px;
+  }
 }
 
 .special__description--cooking::before {
@@ -92,6 +119,11 @@
   background-image: url("../img/index/icon_tub.svg");
   left: 14px;
   top: 13px;
+
+  @media (min-width: @tablet-width) {
+    left: 25px;
+    top: 25px;
+  }
 }
 
 .special__description--diet::before {
@@ -100,6 +132,11 @@
   background-image: url("../img/index/icon_eat.svg");
   left: 17px;
   top: 15px;
+
+  @media (min-width: @tablet-width) {
+    left: 28px;
+    top: 25px;
+  }
 }
 
 .special__description--result::before {
@@ -108,4 +145,50 @@
   background-image: url("../img/index/icon_alarm.svg");
   left: 13px;
   top: 13px;
+
+  @media (min-width: @tablet-width) {
+    left: 24px;
+    top: 23px;
+  }
+}
+
+.special__description--compound::after,
+.special__description--cooking::after,
+.special__description--diet::after,
+.special__description--result::after {
+  position: absolute;
+  display: block;
+  color: @color-grey-50;
+  font-family: @decor-font;
+  font-weight: 400;
+  font-size: 280px;
+  line-height: 100%;
+  text-align: right;
+  top: -40px;
+  left: 120px;
+  z-index: -1;
+}
+
+.special__description--compound::after {
+  @media (min-width: @tablet-width) {
+    content: '1';
+  }
+}
+
+.special__description--cooking::after {
+  @media (min-width: @tablet-width) {
+    content: '2';
+  }
+}
+
+.special__description--diet::after {
+  @media (min-width: @tablet-width) {
+    content: '3';
+  }
+}
+
+.special__description--result::after {
+  @media (min-width: @tablet-width) {
+    content: '4';
+  }
 }
