@@ -4,7 +4,7 @@
 
   @media (min-width: @tablet-width) {
     padding-top: 31px;
-    background: linear-gradient(180deg, @color-white 0%, @color-white 50%, @color-grey-81 50%, @color-grey-81 100%);
+    background: linear-gradient(180deg, @color-white 0%, @color-white 57.21%, @color-grey-81 57.21%, @color-grey-81 100%);
   }
 }
 
@@ -35,6 +35,10 @@
 .case__statistic-container {
   display: flex;
   flex-wrap: wrap;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 70px;
+  }
 }
 
 .case__title {
@@ -43,7 +47,7 @@
   margin-bottom: 28px;
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 14px;
+    margin-bottom: 52px;
   }
 }
 
@@ -55,11 +59,17 @@
   color: @color-grey-700;
   margin-top: 0;
   margin-bottom: 24px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 150%;
+    margin-bottom: 53px;
+  }
 }
 
 .case__statistic {
   display: flex;
-  flex-grow: 1;
+  width: 100%;
   justify-content: space-between;
   list-style: none;
   padding: 0;
@@ -67,16 +77,12 @@
   margin-bottom: 10px;
 
   @media (min-width: @tablet-width) {
-    flex-grow: 0.5;
-  }
-
-  @media (min-width: @tablet-width) {
-    flex-grow: 1;
+    width: 51.7%;
   }
 }
 
 .case__money-spent {
-  flex-grow: 1;
+  width: 100%;
   font-family: @decor-font;
   font-weight: 400;
   font-size: 14px;
@@ -86,10 +92,13 @@
   color: @color-black;
   margin: 0;
   margin-bottom: 42px;
+  margin-top: 7px;
 
   @media (min-width: @tablet-width) {
-    flex-grow: 0.5;
+    width: 25%;
+    font-size: 20px;
     text-align: right;
+    margin-left: auto;
   }
 
   @media (min-width: @desktop-width) {

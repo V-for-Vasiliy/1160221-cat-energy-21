@@ -3,23 +3,48 @@
   width: 30%;
   margin-right: 2px;
   margin-left: 2px;
+
+  @media (min-width: @tablet-width) {
+    width: 60%;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
 }
 
 .graph__toggle {
+  cursor: pointer;
   position: absolute;
   top: 4px;
   width: 50%;
   background-color: @color-green-400;
   height: 6px;
   border-radius: 6px;
+
+  @media (min-width: @tablet-width) {
+    top: -13px;
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    border: 13px solid @color-white;
+    box-shadow: 0 0 0 1px @color-grey-200, 0px 1px 3px rgba(0, 0, 0, 0.16);
+;
+  }
 }
 
 .graph__toggle--before {
   left: 6px;
+
+  @media (min-width: @tablet-width) {
+    left: 0;
+  }
 }
 
 .graph__toggle--after {
   right: 6px;
+
+  @media (min-width: @tablet-width) {
+    right: 0;
+  }
 }
 
 .graph__scale {
@@ -28,4 +53,10 @@
   background-color: @color-white;
   border: 1px solid @color-grey-200;
   border-radius: 6px;
+
+  @media (min-width: @tablet-width) {
+    height: 6px;
+    border: none;
+    background-color: @color-grey-60;
+  }
 }

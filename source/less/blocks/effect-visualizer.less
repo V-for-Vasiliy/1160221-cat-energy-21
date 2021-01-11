@@ -1,10 +1,18 @@
 .effect-visualizer__images {
   position: relative;
   margin-bottom: 20px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 12px;
+  }
 }
 
 .effect-visualizer__slider {
   margin-bottom: 22px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 55px;
+  }
 }
 
 .effect-visualizer__item-after {
@@ -19,9 +27,19 @@
 .effect-visualizer__item-before,
 .effect-visualizer__item-after {
   display: none;
+
+  @media (min-width: @tablet-width) {
+    width: 92%;
+    height: 92%;
+  }
 }
 
 .effect-visualizer__item-before--active,
 .effect-visualizer__item-after--active {
   display: block;
+
+  @media (min-width: @tablet-width) {
+    width: 92%;
+    height: 92%;
+  }
 }
