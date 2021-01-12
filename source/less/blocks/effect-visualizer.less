@@ -5,6 +5,13 @@
   @media (min-width: @tablet-width) {
     margin-bottom: 12px;
   }
+
+  @media (min-width: @desktop-width) {
+    position: relative;
+    top: -26px;
+    left: -40px;
+    margin-bottom: 10px;
+  }
 }
 
 .effect-visualizer__slider {
@@ -12,6 +19,10 @@
 
   @media (min-width: @tablet-width) {
     margin-bottom: 55px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 0;
   }
 }
 
@@ -32,14 +43,14 @@
     width: 92%;
     height: 92%;
   }
+
+  @media (min-width: @desktop-width) {
+    width: 110%;
+    height: 110%;
+  }
 }
 
 .effect-visualizer__item-before--active,
 .effect-visualizer__item-after--active {
   display: block;
-
-  @media (min-width: @tablet-width) {
-    width: 92%;
-    height: 92%;
-  }
 }
