@@ -16,9 +16,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin-left: auto;
-    margin-top: auto;
-    margin-bottom: auto;
+    margin-bottom: 0;
   }
 }
 
@@ -78,6 +76,10 @@
   @media (min-width: @tablet-width) {
     border-bottom: 2px solid @color-green-400;
   }
+
+  @media (min-width: @desktop-width) {
+    border-bottom: 2px solid @color-white;
+  }
 }
 
 .main-nav__link {
@@ -94,6 +96,10 @@
     font-weight: 400;
     letter-spacing: 0;
     line-height: 24px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 20px;
   }
 }
 
